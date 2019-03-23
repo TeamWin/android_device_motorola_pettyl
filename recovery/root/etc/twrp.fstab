@@ -1,0 +1,25 @@
+#<mount point>		<fstype>        <device>                [device2]               <flags>
+/recovery		emmc	/dev/block/bootdevice/by-name/recovery		flags=backup=1;display="RECOVERY"
+/logo			emmc	/dev/block/bootdevice/by-name/logo		flags=backup=1;display="BOOT LOGO";flashimg=1
+/boot			emmc	/dev/block/bootdevice/by-name/boot		flags=display="BOOT"
+/system			ext4	/dev/block/bootdevice/by-name/system		flags=display="SYSTEM"
+/data			f2fs	/dev/block/bootdevice/by-name/userdata		flags=display="DATA";length=-16384;canbewiped;wipeingui
+/vendor			ext4	/dev/block/bootdevice/by-name/vendor		flags=backup=1;display="VENDOR";wipeingui
+/persist		ext4	/dev/block/bootdevice/by-name/persist		flags=backup=1;display="PERSiST"
+/cache			ext4	/dev/block/bootdevice/by-name/cache		flags=display="CACHE";canbewiped;wipeingui;wipeduringfactoryreset
+/misc			emmc	/dev/block/bootdevice/by-name/misc		flags=display="MiSC"
+
+# MODEM
+/firmware		ext4	/dev/block/bootdevice/by-name/modem		flags=backup=1;display="FIRMWARE";mounttodecrypt
+/modem			emmc	/dev/block/bootdevice/by-name/modem		flags=backup=1;display="MODEM"
+/dsp			emmc	/dev/block/bootdevice/by-name/dsp		flags=backup=1;subpartitionof=/modem
+/efs1			emmc	/dev/block/bootdevice/by-name/modemst1		flags=display="EFS";backup=1
+/efs2			emmc	/dev/block/bootdevice/by-name/modemst2		flags=backup=1;subpartitionof=/efs1
+/efsg			emmc	/dev/block/bootdevice/by-name/fsg		flags=backup=1;subpartitionof=/efs1
+/efsc			emmc	/dev/block/bootdevice/by-name/fsc		flags=backup=1;subpartitionof=/efs1
+
+/system_image		emmc	/dev/block/bootdevice/by-name/system		flags=display="SYSTEM(iMG)";flashimg=1
+/vendor_image		emmc	/dev/block/bootdevice/by-name/vendor		flags=display="VENDOR(iMG)";flashimg=1
+
+/external_sd		auto	/dev/block/mmcblk1p1	/dev/block/mmcblk1p	flags=display="EXTERNAL";storage;wipeingui;removable;fsflags=utf8
+/usb-otg		auto	/dev/block/sda1		/dev/block/sda		flags=display="USB";storage;wipeingui;removable;fsflags=utf8
