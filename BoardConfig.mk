@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-LOCAL_PATH := device/motorola/nora
+LOCAL_PATH := device/motorola/pettyl
 
 # Architecture
 TARGET_ARCH := arm
