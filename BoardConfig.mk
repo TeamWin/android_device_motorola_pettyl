@@ -77,6 +77,8 @@ TW_EXCLUDE_SUPERSU := true
 TW_EXTRA_LANGUAGES := true
 TW_INPUT_BLACKLIST := "hbtp_vm"
 TWRP_INCLUDE_LOGCAT := true
+TW_USE_TOOLBOX := true
+
 
 # Encryption
 TW_INCLUDE_CRYPTO := true
