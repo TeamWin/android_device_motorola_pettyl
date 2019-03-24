@@ -27,8 +27,8 @@ PRODUCT_PACKAGES += \
 
 # Kernel
 # Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := nora
-PRODUCT_NAME := full_nora
+PRODUCT_DEVICE := pettyl
+PRODUCT_NAME := full_pettyl
 PRODUCT_BRAND := Motorola
 PRODUCT_MODEL := Moto E5
 PRODUCT_MANUFACTURER := Motorola
