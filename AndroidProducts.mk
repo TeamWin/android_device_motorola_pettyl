@@ -15,5 +15,5 @@
 #
 
 PRODUCT_MAKEFILES := \
-	$(LOCAL_DIR)/omni_nora.mk \
-	$(LOCAL_DIR)/full_nora.mk
+	$(LOCAL_DIR)/omni_pettyl.mk \
+	$(LOCAL_DIR)/full_pettyl.mk
