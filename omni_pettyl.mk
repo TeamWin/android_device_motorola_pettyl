@@ -17,9 +17,9 @@
 # Specify phone tech before including full_phone
 $(call inherit-product, vendor/omni/config/gsm.mk)
 
-$(call inherit-product, device/motorola/nora/full_nora.mk)
+$(call inherit-product, device/motorola/pettyl/full_pettyl.mk)
 
 # Inherit some common Omni stuff.
 $(call inherit-product, vendor/omni/config/common.mk)
 
-PRODUCT_NAME := omni_nora
+PRODUCT_NAME := omni_pettyl
