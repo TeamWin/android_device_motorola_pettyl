@@ -16,7 +16,7 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifeq ($(TARGET_DEVICE), nora,nora_8917)
+ifeq ($(TARGET_DEVICE), pettyl)
 
 include $(call all-makefiles-under,$(LOCAL_PATH))
 
