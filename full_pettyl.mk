@@ -26,8 +26,8 @@ PRODUCT_PACKAGES += \
     libcryptfs_hw
 
 # Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := hannah
-PRODUCT_NAME := full_hannah
+PRODUCT_DEVICE := pettyl
+PRODUCT_NAME := full_pettyl
 PRODUCT_BRAND := Motorola
-PRODUCT_MODEL := Moto E5 Plus
+PRODUCT_MODEL := Moto E5 Play GO
 PRODUCT_MANUFACTURER := Motorola
