@@ -73,6 +73,7 @@ LZMA_RAMDISK_TARGETS := recovery
 BOARD_USES_QCOM_HARDWARE := true
 
 # TWRP Configuration
+TW_EXCLUDE_TWRPAPP := true
 TW_EXTRA_LANGUAGES := true
 TW_THEME := portrait_hdpi
 TW_INCLUDE_CRYPTO := true
